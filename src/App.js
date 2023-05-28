@@ -10,17 +10,29 @@ function App() {
   const [token,setToken]= useState();
 
   if (!token){
-    return <Login setToken={setToken}/>
+    return(
+      <div className="wrapper">
+      <h1>El aroma mágico</h1>
+      <header><img src='https://github.com/jp-hidalgo/parcial2/blob/main/assets/coffe.png?raw=true' alt="coffe"/></header>
+      <Login setToken={setToken}/>
+      <footer style={{ textAlign: 'center' }}>
+        <p>Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico</p>
+      </footer>
+    </div>
+    ) 
   }
   return (
     <div className="wrapper">
-      <h1>El Aroma Magico</h1>
-      <headder><img src='../assets/coffe.png' alt="coffe"/></headder>
+      <h1>El aroma mágico</h1>
+      <header><img src='https://github.com/jp-hidalgo/parcial2/blob/main/assets/coffe.png?raw=true' alt="coffe"/></header>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Coffe />}/>
         </Routes>
       </BrowserRouter>
+      <footer style={{ textAlign: 'center' }}>
+        <p>Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico</p>
+      </footer>
     </div>
   );
 }

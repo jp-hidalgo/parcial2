@@ -1,0 +1,41 @@
+// messages.js
+const messages = {
+  en: {
+    loginTitle: "Login",
+    userLabel: "Username",
+    passwordLabel: "Password",
+    submitButton: "Submit",
+    cancelButton: "Cancel",
+    toastMessage: "Logged in",
+    coffeeTitle: "Coffee",
+    tableHeaderId: "#",
+    tableHeaderName: "Name",
+    tableHeaderType: "Type",
+    tableHeaderRegion: "Region",
+    coffeeType: "Type: {type}",
+    coffeeRegion: "Region: {region}",
+    coffeeNotes: "Notes: {notes}",
+    coffeeCultivationDate: "Cultivation Date: {date}",
+    coffeeAltitude: "Altitude: {altitude}",
+  },
+  es: {
+    loginTitle: "Inicio de Sesión",
+    userLabel: "Usuario",
+    passwordLabel: "Clave",
+    submitButton: "Ingresar",
+    cancelButton: "Cancelar",
+    toastMessage: "Conectado",
+    coffeeTitle: "Café",
+    tableHeaderId: "#",
+    tableHeaderName: "Nombre",
+    tableHeaderType: "Tipo",
+    tableHeaderRegion: "Región",
+    coffeeType: "Tipo: {type}",
+    coffeeRegion: "Región: {region}",
+    coffeeNotes: "Notas: {notes}",
+    coffeeCultivationDate: "Fecha de cultivo: {date}",
+    coffeeAltitude: "Altura: {altitude}",
+  },
+};
+
+export default messages;

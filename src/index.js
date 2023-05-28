@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { IntlProvider } from 'react-intl';
+import messages from './messages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <IntlProvider locale = {navigator.language} messages={messages[navigator.language]}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </IntlProvider>
 );
 
 // If you want your app to work offline and load faster, you can change
