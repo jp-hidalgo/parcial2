@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="wrapper">
       <h1>El Aroma Magico</h1>
-      <headder></headder>
+      <headder><img src='../assets/coffe.png' alt="coffe"/></headder>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Coffe />}/>
